@@ -1,0 +1,323 @@
+baseURL: "https://hugo-profile.netlify.app"
+languageCode: "en-us"
+title: "Hugo Profile"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+    
+Paginate: 3
+enableRobotsTXT: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+ main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blogs
+      weight: 1
+    - identifier: gallery
+      name: Gallery
+      title: Blog posts
+      url: /gallery
+      weight: 2
+
+
+    #Dropdown menu
+    #- identifier: dropdown
+      #title: Example dropdown menu
+      #name: Dropdown
+      #weight: 3
+    #- identifier: dropdown1
+      #title: example dropdown 1
+      #name: example 1
+      #url: /#
+      #parent: dropdown
+      #weight: 1
+    #- identifier: dropdown2
+      #title: example dropdown 2
+      #name: example 2
+      #url: /#
+      #parent: dropdown
+      #weight: 2
+
+params:
+  title: "Hugo Profile"
+  description: Text about my cool site
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    # defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # color:
+  #   textColor:
+  #   secondaryTextColor:
+  #   backgroundColor:
+  #   secondaryBackgroundColor:
+  #   primaryColor:
+  #   secondaryColor:
+
+  #   darkmode:
+  #     textColor:
+  #     secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    brandName: "Hugo Profile" # Brand name for the brand | default is the title variable
+    disableSearch: true
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Wesley"
+    subtitle: "Power Platform Support Analyst"
+    content: "I'm a hobbiest developer with extenstive experience in Azure, DevOps, Power Platform and Customer Service"
+    image: /images/Wesley.jpg
+    button:
+      enable: true
+      name: "Resume"
+      url: "http://localhost:1313/Wesley King CV.docx"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/curi5
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/wesley-king-80269921b/
+      customIcons:
+
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/me.png"
+    content: |-
+      Having completed my Apprenticeship at ANS, I've moved to the Business Applicatoins team to take my first steps into developemnt.
+    skills:
+      enable: true
+      title: "Here are a few technologies I've been working with recently:"
+      items:
+        - "JavaScript"
+        - "C#"
+        - "Power Platform"
+        - "Azure"
+        - "Python"
+        - "Power Shell"
+        - "Office Add-ins"
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - job: "Power Platform Analyst"
+        company: "ANS Group - Business Applications"
+        companyUrl: "https://www.ans.co.uk/"
+        date: "Sept 2022 - present"
+        featuredLink:
+          enable: false
+          name: "View the project"
+          url: "https://example.com"
+        info:
+          enable: true
+          content: I worked as a Service Desk Analyst for one year at ANS.
+        content: |
+          As an Power Platform Analyst at ANS, I quickly learned how to built and troulbeshooting Power Apps & Power Automate solutions where I have:  
+          - Built a Model Driven Integrated Canvas App into a customer enviornment for Quoting / Ordering Products
+          - Built JS events for custom functinality in dynamics 365
+          - Built build and debugged CRM plugins written in C#
+          - Build flows for Business Process Flow mapping, Survay reminders and Time Entry Noticatoins 
+          - Gained expereince working with customers to understand their requirements and propose solutions first hand 
+      - job: "Service Desk Analyst"
+        company: "ANS Group - Traige"
+        companyUrl: "https://www.ans.co.uk/"
+        date: "Sep 2020 - Dec 2021"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        info:
+          enable: true
+          content: I worked as a Service Desk Analyst for one year at ANS.
+        content: |
+          As an Apprentice at ANS, I was a member of Triage, where I have Investigated and resolved a broad range of customer issues including: 
+          - Azure VM's / Azure Networking
+          - On-Premis Servers using Vmware and NetApp 
+          - Commvault/Veeam/MABS Backups 
+          - Networking
+          
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "ANS Group IT Apprentinceship"
+        school:
+          name: "ANS Group"
+          url: "https://www.ans.co.uk/"
+        date: "2021 - 2023"
+        content: |-
+          In addition to getting a Dictinction* in this Information Communication Technician - Support Technician, I also acheived the following qualications during my time there.:
+          - Level 3 Award in Cloud Services (9628-08)
+          - Level 3 Award in Mobile and Operating Systems (9628-07)
+          - Level 3 Certificate in Networking and Architecture (9628-06)	
+          - AZ–900 Microsoft Certified: Azure Fundamentals
+          - PL-900 Microsoft Certified: Power Platform Fundamentals
+          - AZ-204 Microsoft Certified: Azure Developer Associate	
+          - AZ-400 Microsoft Certified: DevOps Engineer
+          - ITIL 4 Foundation	
+      - title: "BTEC L3 Extended Diploma in Engineering "
+        school:
+          name: "Runshaw Collage"
+          url: "https://www.runshaw.ac.uk/the-college/contact-us/"
+        date: "2019 - 2021"
+        content: |-
+          Modules: 
+          - Module 1...
+          - Module 2...
+        featuredLink:
+          enable: false
+          name: "My academic record"
+          url: "https://example.com"
+
+      - title: "High School"
+        school:
+          name: "Deanery High School"
+          url: "https://www.deanery.wigan.sch.uk/"
+        date: "2015-2019"
+        content: |-
+          GCSE Grades: 
+          - DT - Design Technology : 9
+          - Engineering BTEC Diploma - Level 2 : D*
+          - Science - Combined : 8/7
+          - Mathematics : 7
+          - Computer Science : 6 
+          - English Language : 4
+          - English Literature : 3
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+
+  # Achievements
+  achievements:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: The Duke of Edinburgh's Award Bronze, Silver, Gold
+        content: Volunteering, coding, hard working etc
+      - title: 3 - Peaker
+        content: Climbed Snowden, Ben nevis & Scafell 
+
+  # projects
+  projects:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: My Website
+        content: A website built in Hugo
+        image: /images/projects/profile.png
+        featured:
+          name: Demo
+          link: https://hugo-profile.netlify.app
+        badges:
+          - "Hugo"
+          - "Bootstrap"
+          - "Javascript"
+        links:
+         # - icon: fa fa-envelope
+          #  url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+         # - icon: fab fa-github
+          #  url: https://github.com/gurusabarish/hugo-profile
+          #- icon: fab fa-twitter
+           # url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+      - title: Outlook Add-In - GPT Summerizer
+        content: A website built in Hugo
+        image: /images/projects/profile.png
+        featured:
+          name: Demo
+          link: https://github.com/curi5/Outlook-Add-in---Summerze-Email-Chain
+        badges:
+          - "TypeScript"
+          - "Office 365"
+          - "API"
+          - "AI"
+        links:
+         # - icon: fa fa-envelope
+          #  url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+          - icon: fab fa-github
+            url: https://github.com/curi5/Outlook-Add-in---Summerze-Email-Chain
+          #- icon: fab fa-twitter
+           # url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+
+  #Contact
+  contact:
+    enable: true
+    title: "Wesley James King"
+    content: I would love to hear from you! 
+    email: kingwesley2002@gmail.com
+    btnName: kingwesley2002@gmail.com
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: true
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/curi5
+      linkedin: https://www.linkedin.com/in/wesley-king-80269921b/
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
