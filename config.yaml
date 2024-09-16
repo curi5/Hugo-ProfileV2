@@ -21,17 +21,17 @@ markup:
       unsafe: true
 
 Menus:
- main:
-    - identifier: blog
-      name: Blog
-      title: Blog posts
-      url: /blogs
-      weight: 1
-    - identifier: gallery
-      name: Gallery
-      title: Blog posts
-      url: /gallery
-      weight: 2
+#  main:
+#     - identifier: blog
+#       name: Blog
+#       title: Blog posts
+#       url: /blogs
+#       weight: 1
+#     - identifier: gallery
+#       name: Gallery
+#       title: Blog posts
+#       url: /gallery
+#       weight: 2
 
 
     #Dropdown menu
@@ -117,13 +117,13 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Wesley"
-    subtitle: "Power Platform Support Analyst"
+    subtitle: "Product Engineer"
     content: "I'm a hobbiest developer with extenstive experience in Azure, DevOps, Power Platform and Customer Service"
-    image: /images/Wesley.jpg
+    image: /images/wesley-j-king.jpg
     button:
       enable: true
       name: "Resume"
-      url: "http://localhost:1313/Wesley King CV.docx"
+      url: "/docs/CV - Mr Wesley King.docx"
       download: true
       newPage: false
     socialLinks:
@@ -159,10 +159,31 @@ params:
     enable: true
     # title: "Custom Name"
     items:
+
+      - job: "Product Engineer"
+        company: "HoneypotDB"
+        companyUrl: "https://honeypotdb.com/"
+        date: "June 2024 - present"
+        featuredLink:
+          enable: false
+          name: "View the project"
+          url: "https://example.com"
+        info:
+          enable: true
+          content: I worked as a Product Engineer at HoneypotDB
+        content: |
+          Seeking to upskill myself in development, I joined my brothers cyber-security start-up, where I advanced my technical abilties by: 
+          - Building API load tests, built in Pyhton, using Locust
+          - Building new API endpoints using Python Flask and SQLAlchamy
+          - Creating web pages in the HoneypotDB website, using Word-Press.
+          - Exposure to Ansible, Terraform and Helm
+          - Experience with OVH Cloud
+          - Expereince in a sprint based, Agile development environment 
+
       - job: "Power Platform Analyst"
         company: "ANS Group - Business Applications"
         companyUrl: "https://www.ans.co.uk/"
-        date: "Sept 2022 - present"
+        date: "Sept 2022 - June 2024"
         featuredLink:
           enable: false
           name: "View the project"
@@ -211,8 +232,9 @@ params:
           - Level 3 Award in Cloud Services (9628-08)
           - Level 3 Award in Mobile and Operating Systems (9628-07)
           - Level 3 Certificate in Networking and Architecture (9628-06)	
-          - AZ–900 Microsoft Certified: Azure Fundamentals
           - PL-900 Microsoft Certified: Power Platform Fundamentals
+          - PL-200 - Microsoft Cerfifed: Power platform Functional Consultant
+          - AZ–900 Microsoft Certified: Azure Fundamentals
           - AZ-204 Microsoft Certified: Azure Developer Associate	
           - AZ-400 Microsoft Certified: DevOps Engineer
           - ITIL 4 Foundation	
@@ -249,55 +271,55 @@ params:
           url: "https://example.com"
 
   # Achievements
-  achievements:
-    enable: true
-    # title: "Custom Name"
-    items:
-      - title: The Duke of Edinburgh's Award Bronze, Silver, Gold
-        content: Volunteering, coding, hard working etc
-      - title: 3 - Peaker
-        content: Climbed Snowden, Ben nevis & Scafell 
+  # achievements:
+  #   enable: true
+  #   # title: "Custom Name"
+  #   items:
+  #     - title: The Duke of Edinburgh's Award Bronze, Silver, Gold
+  #       content: Volunteering, coding, hard working etc
+  #     - title: 3 - Peaker
+  #       content: Climbed Snowden, Ben nevis & Scafell 
 
   # projects
-  projects:
-    enable: true
-    # title: "Custom Name"
-    items:
-      - title: My Website
-        content: A website built in Hugo
-        image: /images/projects/profile.png
-        featured:
-          name: Demo
-          link: https://hugo-profile.netlify.app
-        badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
-        links:
-         # - icon: fa fa-envelope
-          #  url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
-         # - icon: fab fa-github
-          #  url: https://github.com/gurusabarish/hugo-profile
-          #- icon: fab fa-twitter
-           # url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
-      - title: Outlook Add-In - GPT Summerizer
-        content: A website built in Hugo
-        image: /images/projects/profile.png
-        featured:
-          name: Demo
-          link: https://github.com/curi5/Outlook-Add-in---Summerze-Email-Chain
-        badges:
-          - "TypeScript"
-          - "Office 365"
-          - "API"
-          - "AI"
-        links:
-         # - icon: fa fa-envelope
-          #  url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
-          - icon: fab fa-github
-            url: https://github.com/curi5/Outlook-Add-in---Summerze-Email-Chain
-          #- icon: fab fa-twitter
-           # url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+  # projects:
+  #   enable: true
+  #   # title: "Custom Name"
+  #   items:
+  #     - title: My Website
+  #       content: A website built in Hugo
+  #       image: /images/projects/profile.png
+  #       featured:
+  #         name: Demo
+  #         link: https://hugo-profile.netlify.app
+  #       badges:
+  #         - "Hugo"
+  #         - "Bootstrap"
+  #         - "Javascript"
+  #       links:
+  #        # - icon: fa fa-envelope
+  #         #  url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+  #        # - icon: fab fa-github
+  #         #  url: https://github.com/gurusabarish/hugo-profile
+  #         #- icon: fab fa-twitter
+  #          # url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+  #     - title: Outlook Add-In - GPT Summerizer
+  #       content: A website built in Hugo
+  #       image: /images/projects/profile.png
+  #       featured:
+  #         name: Demo
+  #         link: https://github.com/curi5/Outlook-Add-in---Summerze-Email-Chain
+  #       badges:
+  #         - "TypeScript"
+  #         - "Office 365"
+  #         - "API"
+  #         - "AI"
+  #       links:
+  #        # - icon: fa fa-envelope
+  #         #  url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+  #         - icon: fab fa-github
+  #           url: https://github.com/curi5/Outlook-Add-in---Summerze-Email-Chain
+  #         #- icon: fab fa-twitter
+  #          # url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
 
   #Contact
   contact:
