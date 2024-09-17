@@ -141,7 +141,7 @@ params:
     title: "About Me"
     image: "/images/me.png"
     content: |-
-      Having completed my Apprenticeship at ANS, I've moved to the Business Applicatoins team to take my first steps into developemnt.
+      Having completed my Apprenticeship at ANS, I've moved to the Business Applications team to take my first steps into developemnt.
     skills:
       enable: true
       title: "Here are a few technologies I've been working with recently:"
